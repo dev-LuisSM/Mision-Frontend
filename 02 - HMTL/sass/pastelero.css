@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+body header {
+  width: 17%;
+  height: 100vh;
+  padding: 1rem;
+  border-right: 1px solid #e6e6e6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fafafa;
+  background-image: url("../images/Patron-negro.svg");
+  background-size: 100%;
+  background-repeat: repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header nav ul {
+  margin: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header nav ul a {
+  color: black;
+  margin: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body header nav ul h3 {
+  font-weight: 500;
+  color: black;
+}
+
+body .ordenes, body .cantidades {
+  margin: 0 0 0 17%;
+  width: 83%;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 1rem 1rem 0 1rem;
+}
+
+body .ordenes section, body .cantidades section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+body .ordenes section div, body .cantidades section div {
+  background-color: white;
+  width: 30%;
+  margin: 1rem 1rem 0 0;
+  padding: 1rem;
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+}
+
+body .ordenes section div img, body .cantidades section div img {
+  width: 35%;
+}
+
+body .ordenes section div .texto, body .cantidades section div .texto {
+  font-weight: 400;
+  color: #6f6f6f;
+}
+
+body .ordenes section div span, body .ordenes section div .nombre, body .cantidades section div span, body .cantidades section div .nombre {
+  color: black;
+  font-weight: 500;
+}
+
+body .ordenes section div .nombre, body .cantidades section div .nombre {
+  font-size: medium;
+}
+
+body .ordenes section div:hover, body .cantidades section div:hover {
+  -webkit-box-shadow: rgba(148, 157, 166, 0.14) 1px 1px 3px 0px;
+          box-shadow: rgba(148, 157, 166, 0.14) 1px 1px 3px 0px;
+}
+
+body .cantidades .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .cantidades .cards div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+}
+
+body .cantidades .cards div p {
+  font-weight: 500;
+}
+
+body .cantidades .cards div div {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+body .cantidades .cards div div span:nth-child(2) {
+  color: #6f6f6f;
+}
+
+body .cantidades .titulo {
+  font-size: larger;
+  font-weight: 600;
+}
+
+body .cantidades img {
+  width: 50%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+a::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+h2::before {
+  content: " ";
+  width: 0;
+  border-right: 5px solid transparent;
+  border-left: 5px solid #cb6d4d;
+  position: initial;
+}
+/*# sourceMappingURL=pastelero.css.map */

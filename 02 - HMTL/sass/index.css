@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+body .landing {
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-right: 2rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: end;
+}
+
+body .landing p {
+  margin-bottom: 1rem;
+}
+
+body .landing p:first-of-type {
+  font-size: xxx-large;
+  font-weight: 600;
+}
+
+body .nosotros {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4rem 1rem 0 1rem;
+}
+
+body .nosotros .imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .nosotros .imagen img {
+  width: 100%;
+  margin: 0 0 0 -5rem;
+}
+
+body .nosotros .imagen p {
+  margin: 0 0 0 1rem;
+}
+
+body .productos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4rem 1rem 0 1rem;
+}
+
+body .pasteles-info {
+  background-image: url("../images/background-pasteles.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #ececec;
+}
+
+body .pasteles-info p:first-of-type {
+  font-size: xxx-large;
+  font-weight: 600;
+}
+
+body .pasteles-info span:nth-of-type(1) {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  font-size: xxx-large;
+  font-weight: 600;
+}
+
+body .pasteles-crear {
+  width: 100%;
+}
+
+body .pasteles-crear h2::before {
+  content: " ";
+  width: 0;
+  border-right: 5px solid transparent;
+  border-left: 5px solid #cb6d4d;
+  position: initial;
+}
+
+body .pasteles-crear .opciones {
+  width: 100%;
+  padding: 2rem 0 0 1rem;
+}
+
+body .pasteles-crear .opciones form {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .pasteles-crear .opciones form input[type="checkbox"] {
+  visibility: hidden;
+}
+
+body .pasteles-crear .opciones form input[type="radio"] {
+  visibility: hidden;
+}
+
+body .pasteles-crear .opciones form section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .pasteles-crear .opciones form section div {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .pasteles-crear .opciones form section div label {
+  display: contents;
+}
+
+body .pasteles-crear .opciones form section div :checked + span {
+  font-weight: bold;
+}
+
+body .pasteles-crear .opciones form section img {
+  width: 80%;
+}
+
+body .pasteles-crear .creado {
+  width: 100%;
+  padding: 2rem 1rem 0 1rem;
+}
+
+body .pasteles-crear .creado section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body .pasteles-crear .creado section .pastel {
+  width: 50%;
+  text-align: center;
+}
+
+body .pasteles-crear .creado section .formulario {
+  width: 50%;
+}
+
+body .pasteles-crear .creado section .formulario form {
+  margin: 2rem 1rem;
+  font-family: 'Poppins';
+}
+
+body .pasteles-crear .creado section .formulario form input {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+body .pasteles-crear .creado section .formulario form input[type="tel"] {
+  width: 35%;
+}
+
+body .pasteles-crear .creado section .formulario form textarea {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  resize: vertical;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+a::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: white;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(11%, rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 11%, black 100%);
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: small;
+}
+
+header nav a {
+  padding: 0 1rem;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  border: 2px solid white;
+  border-radius: 88px;
+  background-color: #ffffff00;
+  font-family: "Poppins";
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+button:hover {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 88px;
+  color: black;
+  background-color: white;
+}
+
+.left-to-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+.left-to-right h2::before {
+  content: " ";
+  width: 0;
+  border-right: 5px solid transparent;
+  border-left: 5px solid #cb6d4d;
+  position: initial;
+}
+
+.left-to-right p {
+  width: 70%;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.cards div {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards div p {
+  margin-top: 1rem;
+}
+
+.cards div p:first-of-type {
+  font-weight: 600;
+  font-size: larger;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #19110f;
+  background-image: url(../images/Patron.svg);
+}
+
+footer .informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+footer .informacion div {
+  width: 25%;
+}
+
+footer .informacion div:nth-of-type(1) {
+  margin: 0 0 0 1rem;
+}
+
+footer .informacion a {
+  color: #dfdfdf;
+}
+
+footer .informacion a::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #dfdfdf;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+footer .informacion a:hover::after {
+  width: 100%;
+}
+
+footer .informacion p {
+  color: #dfdfdf;
+}
+
+footer .informacion p:first-of-type {
+  font-weight: 600;
+  font-size: larger;
+  color: #ececec;
+  margin-bottom: 1rem;
+}
+
+footer .informacion p:first-of-type::before {
+  content: " ";
+  width: 0;
+  border-right: 5px solid transparent;
+  border-left: 5px solid #cb6d4d;
+  position: initial;
+}
+
+footer .informacion .logos-redes {
+  margin-right: 1rem;
+}
+
+.prueba {
+  margin: 1.5rem 1rem 1rem 1rem;
+  text-align: center;
+  color: #4d4d4d;
+  font-size: small;
+}
+
+.prueba a {
+  color: #4d4d4d;
+}
+
+.prueba a::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #4d4d4d;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.prueba a:hover::after {
+  width: 100%;
+}
+
+input[type="submit"] {
+  font-family: 'Poppins';
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 88px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 20%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #19110f;
+  color: white;
+  border: 1px solid white;
+}
+/*# sourceMappingURL=index.css.map */

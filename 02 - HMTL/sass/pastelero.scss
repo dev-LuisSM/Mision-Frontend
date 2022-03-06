@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+$color: #cb6d4d;
+$button-bc: #ffffff00;
+$link: #dfdfdf;
+$casi-blanco: #ececec;
+$chocolate: #19110f;
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  user-select: none;
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  
+
+  header{
+    width: 17%;
+    height: 100vh;
+    padding: 1rem;
+
+    border-right: 1px solid #e6e6e6;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: #fafafa;
+    background-image: url('../images/Patron-negro.svg');
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    nav ul{
+      margin: 0.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      a{
+        color: black;
+        margin: 0.5rem;
+        width: fit-content;
+      }
+
+      h3{
+        font-weight: 500;
+        color: black;
+      }
+    }
+  }
+
+  .ordenes, .cantidades{
+    margin: 0 0 0 17%;
+    width: 83%;
+    height: 100vh;
+    background-color: #ffffff;
+
+    padding: 1rem 1rem 0 1rem;
+
+    section{
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      padding-bottom: 2rem;
+
+      div{
+        background-color: white;
+
+        width: 30%;
+        margin: 1rem 1rem 0 0;
+        padding: 1rem;
+
+        font-size: 0.9rem;
+        word-wrap: break-word;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: 10px;
+        border: 1px solid rgb(223, 223, 223);
+        img{
+          width: 35%;
+        }
+        .texto{
+          font-weight: 400;
+          color:#6f6f6f;
+        }
+        span, .nombre{
+          color: black;
+          font-weight: 500;
+        }
+        .nombre{
+          font-size: medium;
+        }
+
+        &:hover{
+          box-shadow: rgba(148, 157, 166, 0.14) 1px 1px 3px 0px;
+        }
+      }
+    }
+
+  }
+
+  .cantidades{
+    .cards{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      div{
+        // margin-bottom: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+        p{
+          font-weight: 500;
+        }
+        div{
+          display: inline-block;
+          text-align: center;
+          width: 100%;
+
+          span:nth-child(2){
+            color: #6f6f6f;
+          }
+        }
+      }
+    }
+    .titulo{
+      font-size: larger;
+      font-weight: 600;
+    }
+    img{
+      width: 50%;
+    }
+  }
+}
+
+// Elementos globales
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  &::after{
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+  }
+
+  &:hover::after{
+      width: 100%;
+  }
+}
+
+h2::before {
+  content: " ";
+  width: 0;
+  border-right: 5px solid transparent;
+  border-left: 5px solid $color;
+  position: initial;
+}
