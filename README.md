@@ -1,5 +1,6 @@
+# Repositorio para misión Frontend - LaunchX
 
-# Rama para Santo Pan 🍰 
-## LaunchX : Mision-Frontend 💻 🚀
+# Launch-X 🚀
+## Mision-Fronten 💻
 
-Esta rama será ocupada para desplegar el sitio.
+Repositorio de proyecto Front End de Launch X	
