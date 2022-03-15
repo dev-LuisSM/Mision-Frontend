@@ -1,6 +1,7 @@
-# Repositorio para misión Frontend - LaunchX
+# Repositorio para misión Frontend - LaunchX 🚀
+## Mission-Frontend 💻
 
-# Launch-X 🚀
-## Mision-Fronten 💻
+Repositorio de proyecto Front End de Launch X.
+Aquí se redirigirán a los proyectos de cada módulo en su propio repositorio.
 
-Repositorio de proyecto Front End de Launch X	
+Developer and almost designer. Coding a beautiful world. ❤️
